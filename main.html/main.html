@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // document.write("hello");
+    // console.log("hello");
+    // name='Imran';
+    // console.log(name);
+    // food=prompt('how nuch:');
+    // tip=prompt('tip')/100;
+    // total=food*tip;
+    // alert(total);
+    // let weather = prompt('enter the weather:');
+    // if(weather == 'rain' || weather=='Rain')
+    // {
+    //   document.write('grab an umberla');
+    // }
+    // else
+    // {
+    //   document.write('dont grab an umberla');
+    // }
+    // function myName(name)
+    // {
+     
+    //   document.write("hi "+name+" nice to meet you");
+    // }
+    // name=prompt();
+    // myName(name);
+    // function AddTwoNumbers(a,b)
+    // {
+    //   c=a+b;
+    //   return c;
+    // }
+    // console.log(AddTwoNumbers(5,7));
+    // const add =  (a,b) =>
+    // {
+    //   return a+b;
+    // }
+    // const sub =  (a,b) =>
+    // {
+    //   return a-b;
+    // }
+    // const mul =  (a,b) =>
+    // {
+    //   return a*b;
+    // }
+    // const div =  (a,b) =>
+    // {
+    //   return a/b;
+    // }
+    // console.log(add(5,7));
+    // console.log(sub(5,7));
+    // console.log(mul(5,7));
+    // console.log(div(5,7));
+    // arrays
+    // const students=['Imran','praveen','karthi','kalandar'];
+    // console.log(students);
+    // //we can acess elemengts bhy its index
+    // console.log(students[2]);
+    // //use slice to get elements from one to another
+    // console.log(students.slice(2,4));
+    // //to add elements at end 
+    // students.push('rahukl');
+    // console.log(students);
+    // //to remove element use pop or shift
+    // students.pop(students);
+    // //pop is useed for deleting from last
+    // //shift is used to deleting from first
+    // //splice is used to delete a one elemrnt to another 
+    // students.splice(1,2,'suresh');
+    // //splice(startcount,deletecount,addingelement);
+    // students.splice(1,0,'seenu');
+    // console.log(students);
+    // //length to find the length of the element 
+    // console.log(students.length);
+    // objects
+    // const person={
+    //   name: 'praveen',
+    //   clg: 'shakthi',
+    //   age:23
+    // }
+    // //to acess the objects
+    // console.log(person.age);
+    // //bracket method
+    // console.log(person['name']);
+    // //dot method
+    // console.log(person.clg);
+    // //object literals are used to create an object in javascript
+    // const obj={};
+    // //assigning value to properties
+    // obj.name="imran";
+    // obj["lastName"]="khan";
+    // console.log(obj.name+ " "+ obj.lastName);
+    // //template string
+    // console.log(`${obj.name} ${obj.lastName}`);
+    // //function inside function
+    // function outer(){
+    //   let x = 10;
+    //   function inner(){
+    //     let y = 5
+    //     return x +y;
+    //     };
+    //     return inner();
+    //     }
+    // console.log(outer());
+  //   const CountLettters= () =>
+  //  {
+  //   phrase="hello guys i am imran";
+  //   let count=0;
+  //   for (let letter=0;letter<phrase.length;letter++)
+  //   {
+  //     count++;
+  //   }
+  //   for(letter of phrase)
+  //   {
+  //     console.log(letter);
+  //   }
+  //   console.log(count);
+  //  }
+  //  CountLettters();
+  //  const GreaterNumber= () => {
+  //   let nums=[4,67,98,34,2];
+  //   let min=0;
+  //   for(let i=0;i<nums.length;i++)
+  //   {
+  //     if(nums[i]>min)
+  //     {
+  //       min=nums[i];
+  //     }
+  //   }
+  //   document.write(min);
+  //  }
+  //  GreaterNumber();
+  //  const ObjectAcessingByLoops= () =>
+  // {
+  //   let person={fname:"Imran",lname:"Khan",age:21};
+  //   for(let i =0 ;i<Object.keys(person);i++)
+  //   {
+  //     console.log(person[i]);
+  //   }
+  //   console.log(Object.keys(person));
+  // }
+  // ObjectAcessingByLoops();
+  // const FindLettersInPhrase = () =>
+  // {
+  //   let phrase="Hello Iam Imran";
+  //   const frequency={};
+  //   for(let i=0;i<phrase.length;i++)
+  //   {
+  //     let letter=phrase[i];
+  //     if(letter in frequency)
+  //     {
+  //       frequency[letter]+=1;
+  //     }
+  //     else{
+  //       frequency[letter]=1;
+  //     }
+  //   }
+  //   console.log(frequency);
+  //   console.log(frequency["H"]);
+  //   document.write(frequency["H"]);
+  //   }
+  //   FindLettersInPhrase();
+  //   const FindWordsInPhrase = () =>
+  //   {
+  //   let phrase="Hello Iam Imran iam Iam imran Imran";
+  //   const frequency={};
+  //   const Words=phrase.split(' ');
+  //   for(let i=0;i<Words.length;i++)
+  //   {
+  //     let letter=Words[i];
+  //     console.log(letter);
+  //     if(letter in frequency)
+  //     {
+  //       frequency[letter]+=1;
+  //     }
+  //     else{
+  //       frequency[letter]=1;
+  //     }
+  //   }
+  //   console.log(frequency);
+  //   }
+  //   FindWordsInPhrase();
+// const SetValueGreaterThan = (numbers,Gvalue) =>
+// {
+//   let res=[];
+//   for(let i=0;i<numbers.length;i++)
+//   {
+//     if(numbers[i]>Gvalue)
+//     {
+//       res.push(numbers[i]);
+//     }
+//   }
+//   console.log(res);
+
+// }
+// let num=[1,2,3,4,5,6];
+// console.log(num.filter(num => num>=3));
+// // filter is basically like an if function num(if (num=num>=3 here check and (filter)print only if it is true)
+// SetValueGreaterThan(num,3);
+const FinalWinner = (user) =>
+{
+    let result=Math.floor(Math.random()*2);
+    if((user == 1 && result == 2) || (user == 0 && result == 1) || (user == 2 && result == 0))
+    {
+        console.log("You lose");
+    }
+    else if((user == 1 && result == 1) || (user == 2 && result == 2) || (user == 0 && result == 0))
+    {
+        console.log("Match draw");
+    }
+    else
+    {
+        console.log("You Win");
+    }
+}
+const UserClickRock = () =>
+{
+    let rock=0;
+    FinalWinner(rock);
+}
+const UserClickPaper = () =>
+{
+    let paper=1;
+    FinalWinner(paper);
+}
+const UserClickScissor = () =>
+{
+    let Siscor=2;
+    FinalWinner(Siscor);
+}
+UserClickPaper();
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+//to acess the objects
+    console.log(person.age);
+    //bracket method
+    console.log(person['name']);
+    //dot method
+    console.log(person.clg);
+    //object literals are used to create an object in javascript
+    const obj={};
+    //assigning value to properties
+    obj.name="imran";
+    obj["lastName"]="khan";
+    console.log(obj.name+ " "+ obj.lastName);
+    //template string
+    console.log(`${obj.name} ${obj.lastName}`);
+    //function inside function
+    function outer(){
+      let x = 10;
+      function inner(){
+        let y = 5
+        return x +y;
+        };
+        return inner();
+        }
+    console.log(outer());

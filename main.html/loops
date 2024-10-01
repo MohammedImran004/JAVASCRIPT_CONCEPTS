@@ -1,0 +1,95 @@
+const CountLettters= () =>
+  {
+    phrase="hello guys i am imran";
+    let count=0;
+    for (let letter=0;letter<phrase.length;letter++)
+    {
+      count++;
+    }
+    for(letter of phrase)
+    {
+      console.log(letter);
+    }
+    console.log(count);
+   }
+   CountLettters();
+   const GreaterNumber= () => {
+    let nums=[4,67,98,34,2];
+    let min=0;
+    for(let i=0;i<nums.length;i++)
+    {
+      if(nums[i]>min)
+      {
+        min=nums[i];
+      }
+    }
+    document.write(min);
+   }
+   GreaterNumber();
+   const ObjectAcessingByLoops= () =>
+  {
+    let person={fname:"Imran",lname:"Khan",age:21};
+    for(let i =0 ;i<Object.keys(person);i++)
+    {
+      console.log(person[i]);
+    }
+    console.log(Object.keys(person));
+  }
+  ObjectAcessingByLoops();
+  const FindLettersInPhrase = () =>
+  {
+    let phrase="Hello Iam Imran";
+    const frequency={};
+    for(let i=0;i<phrase.length;i++)
+    {
+      let letter=phrase[i];
+      if(letter in frequency)
+      {
+        frequency[letter]+=1;
+      }
+      else{
+        frequency[letter]=1;
+      }
+    }
+    console.log(frequency);
+    console.log(frequency["H"]);
+    document.write(frequency["H"]);
+    }
+    FindLettersInPhrase();
+    const FindWordsInPhrase = () =>
+    {
+    let phrase="Hello Iam Imran iam Iam imran Imran";
+    const frequency={};
+    const Words=phrase.split(' ');
+    for(let i=0;i<Words.length;i++)
+    {
+      let letter=Words[i];
+      console.log(letter);
+      if(letter in frequency)
+      {
+        frequency[letter]+=1;
+      }
+      else{
+        frequency[letter]=1;
+      }
+    }
+    console.log(frequency);
+    }
+    FindWordsInPhrase();
+    const SetValueGreaterThan = (numbers,Gvalue) =>
+{
+  let res=[];
+  for(let i=0;i<numbers.length;i++)
+  {
+    if(numbers[i]>Gvalue)
+    {
+      res.push(numbers[i]);
+    }
+  }
+  console.log(res);
+
+}
+let num=[1,2,3,4,5,6];
+console.log(num.filter(num => num>=3));
+// filter is basically like an if function num(if (num=num>=3 here check and (filter)print only if it is true)
+SetValueGreaterThan(num,3);
